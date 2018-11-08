@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>Add a cocktail</h1>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name, :input_html => { :class => "cocktail_name" } %>
+    <p>How many ingredients?</p>
+    <select name="Number of ingredients" id="select-number-of-ingredients">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <p>Choose ingredients</p>
+    <span class="">
+      <%= f.label :ingredients, 'Ingredient:' %>
+      <br>
+      <%= f.select :ingredients, @ingredients %>
+    </span>
+    <span class="dose-input">
+      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+    </span>
+    <span class="hidden">
+      <%= f.label :ingredients, 'Ingredient:' %>
+      <br>
+      <%= f.select :ingredients, @ingredients %>
+    </span>
+    <span class="hidden-dose dose-input">
+      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+    </span>
+    <span class="hidden">
+      <%= f.label :ingredients, 'Ingredient:' %>
+      <br>
+      <%= f.select :ingredients, @ingredients %>
+    </span>
+    <span class="hidden-dose dose-input">
+      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+    </span>
+    <span class="hidden">
+      <%= f.label :ingredients, 'Ingredient:' %>
+      <br>
+      <%= f.select :ingredients, @ingredients %>
+    </span>
+    <span class="hidden-dose dose-input">
+      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+    </span>
+    <span class="hidden">
+      <%= f.label :ingredients, 'Ingredient:' %>
+      <br>
+      <%= f.select :ingredients, @ingredients %>
+    </span>
+    <span class="hidden-dose dose-input">
+      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+    </span>
+
+    <p><%= f.submit %></p>
+  <% end %>
+
+</div>
