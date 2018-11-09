@@ -12,47 +12,27 @@
     </select>
     <p>Choose ingredients</p>
     <span class="">
-      <%= f.label :ingredients, 'Ingredient:' %>
-      <br>
-      <%= f.select :ingredients, @ingredients %>
-    </span>
-    <span class="dose-input">
-      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
+      <%= f.association :ingredients %>
     </span>
     <span class="hidden">
-      <%= f.label :ingredients, 'Ingredient:' %>
-      <br>
-      <%= f.select :ingredients, @ingredients %>
+      <%= f.association :ingredients %>
     </span>
-    <span class="hidden-dose dose-input">
-      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
-    </span>
+
     <span class="hidden">
-      <%= f.label :ingredients, 'Ingredient:' %>
-      <br>
-      <%= f.select :ingredients, @ingredients %>
+      <%= f.association :ingredients %>
     </span>
-    <span class="hidden-dose dose-input">
-      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
-    </span>
+
     <span class="hidden">
-      <%= f.label :ingredients, 'Ingredient:' %>
-      <br>
-      <%= f.select :ingredients, @ingredients %>
+      <%= f.association :ingredients %>
     </span>
-    <span class="hidden-dose dose-input">
-      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
-    </span>
+
     <span class="hidden">
-      <%= f.label :ingredients, 'Ingredient:' %>
-      <br>
-      <%= f.select :ingredients, @ingredients %>
+      <%= f.association :ingredients %>
     </span>
-    <span class="hidden-dose dose-input">
-      <%= f.input :doses, :label => "Dose:", :input_html => { :value => nil } %>
-    </span>
+
 
     <p><%= f.submit %></p>
   <% end %>
+  <%= link_to "Back to cocktails!", cocktails_path %>
 
 </div>
