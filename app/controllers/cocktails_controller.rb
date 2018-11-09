@@ -22,6 +22,12 @@ class CocktailsController < ApplicationController
     @doses = Dose.where(cocktail_id: params[:id])
   end
 
+  def destroy
+    cocktail = Cocktail.find(params[:id])
+    cocktail.destroy
+    redirect_to cocktails_path
+  end
+
   def update_doses
     raise
   end
