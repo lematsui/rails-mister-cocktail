@@ -4,7 +4,7 @@
     <%= simple_form_for([@cocktail, dose]) do |f|%>
       <h3><%= dose.ingredient.name.capitalize %></h3>
       <p><strong>Dose:</strong></p>
-      <%= f.input :description, label: false %>
+      <%= f.input :description, label: false, :input_html => { :style => "width: 200px;" } %>
       <%= f.submit %>
     <% end %>
   <% end %>
