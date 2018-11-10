@@ -10,27 +10,10 @@
       <option value="4">4</option>
       <option value="5">5</option>
     </select>
-    <p>Choose ingredients</p>
+    <p>Choose ingredients (hold control to select more than one)</p>
     <span class="">
-      <%= f.association :ingredients, :input_html => { style: "width: 200px;" }, label: false %>
+      <%= f.association :ingredients, :input_html => { style: "width: 200px; height: 400px;" }, label: false %>
     </span>
-    <span class="hidden">
-      <%= f.association :ingredients, :input_html => { style: "width: 200px;" }, label: false %>
-    </span>
-
-    <span class="hidden">
-      <%= f.association :ingredients, :input_html => { style: "width: 200px;" }, label: false %>
-    </span>
-
-    <span class="hidden">
-      <%= f.association :ingredients, :input_html => { style: "width: 200px;" }, label: false %>
-    </span>
-
-    <span class="hidden">
-      <%= f.association :ingredients, :input_html => { style: "width: 200px;" }, label: false %>
-    </span>
-
-
     <p><%= f.submit %></p>
   <% end %>
   <%= link_to "Back to cocktails!", cocktails_path %>
